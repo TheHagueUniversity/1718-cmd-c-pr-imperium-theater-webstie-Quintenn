@@ -3,55 +3,68 @@
     <head>
         <meta charset="utf-8" />
         <link href="style.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="Javascript/siema.min.js"></script>
+        <script type="text/javascript" src="Javascript/script.js"></script>
     </head>
     <body>
         <div class="container">
           <header>
             <div class="logo">
-              <h1>Imperium Theater</h1>
+                <a href="index.html"><img src="logo.png" alt="Het logo van het Imperium theater." title="Imperium" /></a>
             </div> 
             <nav class="hoofdmenu">
               <ul>
-                <li>Voorstellingen</li>
-                <li>Over ons</li>
-                <li>Galerie</li>
-                <li>Archief</li>
-                <li>Theater huren</li>
-                <li>Contact</li>
+                <li><a href ="voorstellingen.html">Voorstellingen</a></li>
+                <li><a href="overons.html">Over ons</a></li>
+                <li><a href="#">Galerie</a></li>
+                <li><a href="#">Archief</a></li>
+                <li><a href="#">Theater huren</a></li>
+                <li><a href="contact.html">Contact</a></li>
               </ul>
             </nav>
           </header>
-          <main>
-            <section class="welcome">
-              <h1>Paginatitel</h1>
-              <p>Welkom op de website van Imperium</p>
+          <main> <!-- sliderknoppen horen links en rechts van de slider te staan-->
+            <section class="slide">
+                <a href="#" class="links">&#8249</a>
+                <div class="siema">
+                    <img src="zinsbegoocheling/fotoslide1.jpg" title="logo" alt="logo van imperium">
+                    <img src="zinsbegoocheling/fotoslide2.jpg" title="logo" alt="logo van imperium">
+                    <img src="zinsbegoocheling/fotoslide3.jpg" title="logo" alt="logo van imperium">
+                    <img src="zinsbegoocheling/fotoslide4.jpg" title="logo" alt="logo van imperium">
+                    <img src="zinsbegoocheling/fotoslide5.jpg" title="logo" alt="logo van imperium">
+                    <img src="zinsbegoocheling/fotoslide6.jpg" title="logo" alt="logo van imperium">
+                </div>
+                <a href="#" class="rechts">&#8250</a>
             </section>
-            <section class="voorstellingen">
-              <h1>Voorstellingen deze week</h1>
-              <ul class="voorstellingenlist">
-                <li>
-                  <h1>Theatervoorstelling</h1>
-                  <p>Dit is een hele leuke voorstelling</p>
-                </li>
-                <li>
-                  <h1>Theatervoorstelling 2</h1>
-                  <p>Dit is een nog leukere voorstelling</p>
-                </li>
-              </ul>
+            <section class="snelkaartjes">
+                <form method="get" id="snelkaartjes" action="reserveren.html">
+                        <h4>Snel kaartjes reserveren?</h4>
+                        <input type="date" name="kalender" id="kalender" />
+                        <input type="submit" name="zoek" id="zoek" />
+                </form>
             </section>
-            <aside>
-              <article class="leden">
-                <h1>Ledendag 1 april</h1>
-                <p>Op 1 april staat de nieuwe ledendag gepland<p>
-              </article>
-            </aside>
+            <section class="youtube">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sJx1Ad2LGQw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </section>
+            <section class="imperiumtext">
+                <p>
+                    Toneelgroep Imperium is een actief amateurtheatergezelschap uit Leiden. Imperium is opgericht in 1957 en telt ongeveer 60 actieve leden. Wij hebben ook ons eigen theater, gevestigd in het hart van de Leidse binnenstad. Het theater wordt regelmatig verhuurd aan andere gezelschappen.
+                </p>
+            </section>
           </main>
           <footer>
-            <h2>Inschrijven Nieuwsbrief</h2>
-            <form method="GET" id="nieuwsbrief">
-
-            </form>
-            </footer>
-        </div>
+            <h3>Imperium Theater</h3>
+            <h4>Oude Vest 33a</h4>
+            <h4>2312XR Leiden</h4>
+            <h4>071 5141035</h4>
+            
+            <h2><a href="contact.html">Contact</a></h2>
+            <h2><a href="contact.html">Route</a></h2>
+            <h2>Nieuwsbrief</h2>
+            <h2>Volg ons</h2>
+            <a href="https://www.facebook.com/ToneelgroepImperium/"><img src="facebooklogo.png"></a>
+            <img src="twitterlogo.png">
+        </footer>
+        </div> 
     </body>
 </html>
